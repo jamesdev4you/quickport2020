@@ -30,14 +30,16 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/howitworks' element={<Howitworks />} />
-        <Route path='/costamount' element={<CostAmount />} />
-      </Routes>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={theme}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/howitworks' element={<Howitworks />} />
+          <Route path='/costamount' element={<CostAmount />} />
+        </Routes>
+      </ThemeProvider>
+    </>
   );
 }
 
