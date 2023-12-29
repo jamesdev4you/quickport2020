@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quickport2020/static/css/main.e9a92341.css",
-    "main.js": "/quickport2020/static/js/main.dc222313.js",
+    "main.js": "/quickport2020/static/js/main.db77dc0a.js",
     "static/media/rangerover.png": "/quickport2020/static/media/rangerover.3ff81acc36cdf5ab5dac.png",
     "static/media/ferrari.jpg": "/quickport2020/static/media/ferrari.4f4e8de151f91621582f.jpg",
     "static/media/contactcarright.jpg": "/quickport2020/static/media/contactcarright.e4e8b6ad34b242e8a6c0.jpg",
@@ -43,10 +43,10 @@
     "static/media/costOne.svg": "/quickport2020/static/media/costOne.52f8d0f0e58140700aad812e4bcccb44.svg",
     "static/media/one.svg": "/quickport2020/static/media/one.244127218b19e321575f80e3dcc4abf5.svg",
     "main.e9a92341.css.map": "/quickport2020/static/css/main.e9a92341.css.map",
-    "main.dc222313.js.map": "/quickport2020/static/js/main.dc222313.js.map"
+    "main.db77dc0a.js.map": "/quickport2020/static/js/main.db77dc0a.js.map"
   },
   "entrypoints": [
     "static/css/main.e9a92341.css",
-    "static/js/main.dc222313.js"
+    "static/js/main.db77dc0a.js"
   ]
 }
