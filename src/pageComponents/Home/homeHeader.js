@@ -1,16 +1,49 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import Ferrari from '../../assets/ferrari.jpg';
+import emailjs from "@emailjs/browser";
 import {
   Typography,
   Autocomplete,
   TextField,
   Grid,
   Button,
+  Snackbar,
 } from '@mui/material';
 import '../../index.css';
 
-const header = () => {
+const Header = () => {
+
+  const form = useRef();
+  const [showMessage, setShowMessage] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bs0dyed",
+        "template_m6y8k2o",
+        form.current,
+        "PmBCjNlwxEGEJCptE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          setShowMessage(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleCloseMessage = () => {
+    setShowMessage(false);
+  };
+
   return (
     <Box
       sx={{
@@ -168,12 +201,14 @@ const header = () => {
         >
           <span style={{ color: 'red' }}>*</span> INDICATES REQUIRED FIELD!
         </Typography>
-        <form>
+        <form ref={form}
+        onSubmit={sendEmail}>
           <Grid container spacing={1}>
             <Grid xs={12} item sx={{ marginRight: 'auto' }}>
               <TextField
                 label='Transport car FROM'
                 placeholder='Zip code'
+                name="user_from"
                 variant='filled'
                 fullWidth
                 required
@@ -218,6 +253,7 @@ const header = () => {
               <TextField
                 label='Transport car TO'
                 placeholder='Zip code'
+                name="user_to"
                 variant='filled'
                 fullWidth
                 required
@@ -262,6 +298,7 @@ const header = () => {
               <TextField
                 label='Phone Number'
                 placeholder='Phone'
+                name="user_phone"
                 variant='filled'
                 fullWidth
                 required
@@ -325,9 +362,17 @@ const header = () => {
             </Grid>
           </Grid>
         </form>
+        <Snackbar
+        open={showMessage}
+        autoHideDuration={6000}
+        onClose={handleCloseMessage}
+        sx={{backgroundColor: 'green'}}
+        message="Thank you! We will get back to you shortly."
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      />
       </Box>
     </Box>
   );
 };
 
-export default header;
+export default Header;

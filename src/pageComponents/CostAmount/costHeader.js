@@ -1,10 +1,46 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Box from '@mui/material/Box';
 import CostHeader from '../../assets/costHeader.jpg';
-import { Typography, TextField, Grid, Button } from '@mui/material';
+import emailjs from "@emailjs/browser";
+import {   Typography,
+  TextField,
+  Grid,
+  Button,
+  Snackbar, } from '@mui/material';
 import '../../index.css';
 
-const costHeader = () => {
+const CoostHeader = () => {
+
+  const form = useRef();
+  const [showMessage, setShowMessage] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bs0dyed",
+        "template_m6y8k2o",
+        form.current,
+        "PmBCjNlwxEGEJCptE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          setShowMessage(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleCloseMessage = () => {
+    setShowMessage(false);
+  };
+
   return (
     <Box
       sx={{
@@ -162,12 +198,14 @@ const costHeader = () => {
         >
           <span style={{ color: 'red' }}>*</span> INDICATES REQUIRED FIELD!
         </Typography>
-        <form>
+        <form ref={form}
+        onSubmit={sendEmail}>
           <Grid container spacing={1}>
             <Grid xs={12} item sx={{ marginRight: 'auto' }}>
               <TextField
                 label='Transport car FROM'
                 placeholder='Zip code'
+                name="user_from"
                 variant='filled'
                 fullWidth
                 required
@@ -212,6 +250,7 @@ const costHeader = () => {
               <TextField
                 label='Transport car TO'
                 placeholder='Zip code'
+                name="user_to"
                 variant='filled'
                 fullWidth
                 required
@@ -257,6 +296,7 @@ const costHeader = () => {
                 label='Phone Number'
                 placeholder='Phone'
                 variant='filled'
+                name="user_phone"
                 fullWidth
                 required
                 color='secondary'
@@ -319,9 +359,16 @@ const costHeader = () => {
             </Grid>
           </Grid>
         </form>
+        <Snackbar
+        open={showMessage}
+        autoHideDuration={6000}
+        onClose={handleCloseMessage}
+        message="Thank you! We will get back to you shortly."
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      />
       </Box>
     </Box>
   );
 };
 
-export default costHeader;
+export default CoostHeader;

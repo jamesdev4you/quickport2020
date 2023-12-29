@@ -1,7 +1,42 @@
-import React from 'react';
-import { Typography, Grid, TextField, Button, Box } from '@mui/material';
+import React, { useRef, useState } from 'react';
+import { Snackbar, Typography, Grid, TextField, Button, Box } from '@mui/material';
+import emailjs from "@emailjs/browser";
+
 
 export default function ContactForm() {
+
+  const form = useRef();
+  const [showMessage, setShowMessage] = useState(false);
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bs0dyed",
+        "template_8c9posh",
+        form.current,
+        "PmBCjNlwxEGEJCptE"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          setShowMessage(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleCloseMessage = () => {
+    setShowMessage(false);
+  };
+
+
   return (
     <Box
       sx={{
@@ -49,10 +84,14 @@ export default function ContactForm() {
         <span style={{ color: 'red' }}>*</span> INDICATES REQUIRED FIELD!
       </Typography>
       <form
+        
         style={{
           paddingTop: '5px',
         }}
+        ref={form}
+        onSubmit={sendEmail}
       >
+      
         <Grid container spacing={2}>
           <Grid xs={12} item sx={{ marginRight: 'auto' }}>
             <TextField
@@ -271,6 +310,13 @@ export default function ContactForm() {
           </Grid>
         </Grid>
       </form>
+      <Snackbar
+        open={showMessage}
+        autoHideDuration={6000}
+        onClose={handleCloseMessage}
+        message="Thank you! We will get back to you shortly."
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      />
     </Box>
   );
 }
