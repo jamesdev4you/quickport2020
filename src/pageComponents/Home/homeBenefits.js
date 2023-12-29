@@ -142,7 +142,7 @@ const homeBenefits = () => {
                 lg: '16px',
                 md: '22px',
                 sm: '20px',
-                xs: '14px',
+                xs: '18px',
               },
               width: '100%',
               textAlign: 'center',

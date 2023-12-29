@@ -37,6 +37,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/howitworks' element={<Howitworks />} />
           <Route path='/costamount' element={<CostAmount />} />
+          <Route path='*' element={<Home />}/>
         </Routes>
       </ThemeProvider>
     </>

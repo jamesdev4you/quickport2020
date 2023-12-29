@@ -109,7 +109,7 @@ const homeAbout = () => {
               lg: '16px',
               md: '14px',
               sm: '18px',
-              xs: '14px',
+              xs: '18px',
             },
           }}
         >
@@ -124,7 +124,7 @@ const homeAbout = () => {
               lg: '16px',
               md: '14px',
               sm: '18px',
-              xs: '14px',
+              xs: '18px',
             },
           }}
         >
