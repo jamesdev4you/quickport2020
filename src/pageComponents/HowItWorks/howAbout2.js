@@ -99,7 +99,10 @@ const howAbout2 = () => {
             },
           }}
         >
-          Concerned with what happens after the form is completed? Quick Wheels has you covered! Our expert drivers are skilled, experienced, and ready to transport your car safely. Trust us for a stress-free journey. Contact us now!
+          Concerned with what happens after the form is completed? Quick Wheels
+          has you covered! Our expert drivers are skilled, experienced, and
+          ready to transport your car safely. Trust us for a stress-free
+          journey. Contact us now!
         </Typography>
         <Typography
           sx={{
@@ -115,9 +118,13 @@ const howAbout2 = () => {
             },
           }}
         >
-          At Quick Wheels, our expert drivers specialize in safely transporting your vehicle across the USA. With extensive experience and a commitment to reliability, we ensure your car's journey is smooth and stress-free. Trust us for top-notch service.
+          At Quick Wheels, our expert drivers specialize in safely transporting
+          your vehicle across the USA. With extensive experience and a
+          commitment to reliability, we ensure your car's journey is smooth and
+          stress-free. Trust us for top-notch service.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'white',

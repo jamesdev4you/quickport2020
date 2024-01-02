@@ -123,7 +123,10 @@ const howAbout3 = () => {
             },
           }}
         >
-          Quick Wheels excels in routing your vehicle swiftly and safely across the USA. Our dedicated team plans the best route, ensuring timely delivery to your doorstep. Experience stress-free, reliable transportation with us. Your vehicle, our priority.
+          Quick Wheels excels in routing your vehicle swiftly and safely across
+          the USA. Our dedicated team plans the best route, ensuring timely
+          delivery to your doorstep. Experience stress-free, reliable
+          transportation with us. Your vehicle, our priority.
         </Typography>
         <Typography
           sx={{
@@ -139,11 +142,13 @@ const howAbout3 = () => {
             },
           }}
         >
-          GPT
-
-          Quick Wheels' dedicated team meticulously plans the best route for your vehicle's journey across the USA. We combine expertise and technology to ensure efficient, safe transport, tailored to your needs. Trust us for top-tier vehicle routing.
+          GPT Quick Wheels' dedicated team meticulously plans the best route for
+          your vehicle's journey across the USA. We combine expertise and
+          technology to ensure efficient, safe transport, tailored to your
+          needs. Trust us for top-tier vehicle routing.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'white',

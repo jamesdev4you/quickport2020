@@ -123,7 +123,10 @@ const howAbout1 = () => {
             },
           }}
         >
-          For a hassle-free experience with Quick Wheels, simply fill out our online form. Provide vehicle details and your transport needs across the USA. We guarantee safe, efficient vehicle relocation. Easy, reliable, and tailored to you!
+          For a hassle-free experience with Quick Wheels, simply fill out our
+          online form. Provide vehicle details and your transport needs across
+          the USA. We guarantee safe, efficient vehicle relocation. Easy,
+          reliable, and tailored to you!
         </Typography>
         <Typography
           sx={{
@@ -139,9 +142,12 @@ const howAbout1 = () => {
             },
           }}
         >
-          Fill out our quick form: enter your details and vehicle information. We ensure a smooth, safe transport experience. Let's get your journey started today with Quick Wheels.
+          Fill out our quick form: enter your details and vehicle information.
+          We ensure a smooth, safe transport experience. Let's get your journey
+          started today with Quick Wheels.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'white',

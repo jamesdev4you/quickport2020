@@ -36,6 +36,7 @@ const LightPhoneButton = (props) => (
       background: `gold`,
       color: 'black',
       display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none' },
+      fontWeight: 'bold',
       '&:hover': {
         color: 'black',
         background: 'gold',
@@ -61,6 +62,7 @@ const LightPhonePhoneButton = (props) => (
       height: '30px',
       background: `gold`,
       color: 'black',
+      fontWeight: 'bold',
       display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'flex', xs: 'flex' },
       '&:hover': {
         color: 'black',

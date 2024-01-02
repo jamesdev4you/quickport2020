@@ -98,7 +98,9 @@ const costAbout2 = () => {
             },
           }}
         >
-          The distance your car needs to travel is a key factor influencing transportation costs. Longer journeys typically incur higher expenses due to factors like fuel, maintenance, and driver accommodations.
+          The distance your car needs to travel is a key factor influencing
+          transportation costs. Longer journeys typically incur higher expenses
+          due to factors like fuel, maintenance, and driver accommodations.
         </Typography>
         <Typography
           sx={{
@@ -114,9 +116,13 @@ const costAbout2 = () => {
             },
           }}
         >
-          However, Quick Wheels is committed to providing competitive rates while ensuring the safety and security of your vehicle. Choose Quick Wheels for a seamless journey from door to door, no matter the distance.
+          However, Quick Wheels is committed to providing competitive rates
+          while ensuring the safety and security of your vehicle. Choose Quick
+          Wheels for a seamless journey from door to door, no matter the
+          distance.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'white',

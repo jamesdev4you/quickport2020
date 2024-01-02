@@ -113,7 +113,9 @@ const homeAbout = () => {
             },
           }}
         >
-          Quick Wheels: Effortlessly transport your vehicle across the USA with us. Reliable, speedy, and secure – we make moving your car worry-free. Trust Quick Wheels for a smooth, efficient journey.
+          Quick Wheels: Effortlessly transport your vehicle across the USA with
+          us. Reliable, speedy, and secure – we make moving your car worry-free.
+          Trust Quick Wheels for a smooth, efficient journey.
         </Typography>
         <Typography
           sx={{
@@ -128,9 +130,12 @@ const homeAbout = () => {
             },
           }}
         >
-
-          Your go-to for stress-free vehicle transport across the USA. Specializing in personal cars, we ensure fast, secure, and reliable relocation. Trust us to move your vehicle effortlessly.        </Typography>
+          Your go-to for stress-free vehicle transport across the USA.
+          Specializing in personal cars, we ensure fast, secure, and reliable
+          relocation. Trust us to move your vehicle effortlessly.{' '}
+        </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'black',

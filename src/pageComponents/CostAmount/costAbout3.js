@@ -122,7 +122,10 @@ const costAbout3 = () => {
             },
           }}
         >
-          The weight of your vehicle is a crucial factor in determining transportation costs. Heavier cars require more fuel and may necessitate specialized equipment for safe and secure transport, which can lead to higher expenses.
+          The weight of your vehicle is a crucial factor in determining
+          transportation costs. Heavier cars require more fuel and may
+          necessitate specialized equipment for safe and secure transport, which
+          can lead to higher expenses.
         </Typography>
         <Typography
           sx={{
@@ -138,9 +141,12 @@ const costAbout3 = () => {
             },
           }}
         >
-          We're here to make your car transport experience hassle-free and cost-effective. Choose Quick Wheels for a smooth journey, no matter the weight of your vehicle.
+          We're here to make your car transport experience hassle-free and
+          cost-effective. Choose Quick Wheels for a smooth journey, no matter
+          the weight of your vehicle.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'white',

@@ -98,7 +98,9 @@ const costAbout4 = () => {
             },
           }}
         >
-          Your car's protection is our priority. Our experienced team understands the ins and outs of car transport, guaranteeing the safe and secure relocation of your vehicle.
+          Your car's protection is our priority. Our experienced team
+          understands the ins and outs of car transport, guaranteeing the safe
+          and secure relocation of your vehicle.
         </Typography>
         <Typography
           sx={{
@@ -114,9 +116,11 @@ const costAbout4 = () => {
             },
           }}
         >
-          Quick Wheels operates across the country, ensuring that we can move your car to and from any location with ease.
+          Quick Wheels operates across the country, ensuring that we can move
+          your car to and from any location with ease.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'white',

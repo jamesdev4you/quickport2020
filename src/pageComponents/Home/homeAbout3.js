@@ -120,7 +120,9 @@ const homeAbout3 = () => {
             },
           }}
         >
-          Quick Wheels expertly moves vehicles across the USA. Specializing in personal transport, we ensure your car's safe, efficient journey. Choose Quick Wheels for reliable, stress-free vehicle relocation.
+          Quick Wheels expertly moves vehicles across the USA. Specializing in
+          personal transport, we ensure your car's safe, efficient journey.
+          Choose Quick Wheels for reliable, stress-free vehicle relocation.
         </Typography>
         <Typography
           sx={{
@@ -135,9 +137,13 @@ const homeAbout3 = () => {
             },
           }}
         >
-          Quick Wheels delivers efficient vehicle journeys across the USA. We specialize in moving personal cars quickly and safely. Choose us for a reliable, smooth transport experience. Your car is in expert hands with Quick Wheels.
+          Quick Wheels delivers efficient vehicle journeys across the USA. We
+          specialize in moving personal cars quickly and safely. Choose us for a
+          reliable, smooth transport experience. Your car is in expert hands
+          with Quick Wheels.
         </Typography>
         <Button
+          href='tel:14159423491'
           variant='contained'
           sx={{
             backgroundColor: 'black',
