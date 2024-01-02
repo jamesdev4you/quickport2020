@@ -14,6 +14,10 @@ import Logo from '../../assets/logo.png';
 import '../../navlink.css';
 import '../../index.css';
 import { Outlet } from 'react-router-dom';
+import {
+  LightPhoneButton,
+  LightPhonePhoneButton,
+} from '../../styledComponents';
 
 const drawerWidth = 240;
 const navItems = [
@@ -37,6 +41,7 @@ export default function NavBar(props) {
     >
       <img src={Logo} alt='yooo' style={{ height: '150px', width: '150px' }} />
       <Divider sx={{ backgroundColor: 'white' }} />
+
       <List sx={{ backgroundColor: 'black' }}>
         {navItems.map((item) => (
           <ListItem
@@ -59,6 +64,7 @@ export default function NavBar(props) {
           </ListItem>
         ))}
       </List>
+      <LightPhonePhoneButton href='tel:14159423491' />
     </Box>
   );
 
@@ -119,6 +125,7 @@ export default function NavBar(props) {
               </NavLink>
             ))}
           </Box>
+          <LightPhoneButton />
         </Toolbar>
       </AppBar>
       <Box component='nav' sx={{ backgroundColor: 'black' }}>

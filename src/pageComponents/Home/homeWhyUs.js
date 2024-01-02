@@ -190,7 +190,7 @@ const homeWhyUs = () => {
                   lg: '16px',
                   md: '22px',
                   sm: '18px',
-                  xs: '14px',
+                  xs: '16px',
                 },
               }}
             >
