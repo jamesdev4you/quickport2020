@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.90471a07.css",
-    "main.js": "/static/js/main.5c7ea800.js",
+    "main.js": "/static/js/main.e38a0e30.js",
     "static/media/rangerover.png": "/static/media/rangerover.3ff81acc36cdf5ab5dac.png",
     "static/media/ferrari.jpg": "/static/media/ferrari.4f4e8de151f91621582f.jpg",
     "static/media/contactcarright.jpg": "/static/media/contactcarright.e4e8b6ad34b242e8a6c0.jpg",
@@ -43,10 +43,10 @@
     "static/media/costOne.svg": "/static/media/costOne.52f8d0f0e58140700aad812e4bcccb44.svg",
     "static/media/one.svg": "/static/media/one.244127218b19e321575f80e3dcc4abf5.svg",
     "main.90471a07.css.map": "/static/css/main.90471a07.css.map",
-    "main.5c7ea800.js.map": "/static/js/main.5c7ea800.js.map"
+    "main.e38a0e30.js.map": "/static/js/main.e38a0e30.js.map"
   },
   "entrypoints": [
     "static/css/main.90471a07.css",
-    "static/js/main.5c7ea800.js"
+    "static/js/main.e38a0e30.js"
   ]
 }
