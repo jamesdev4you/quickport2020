@@ -16,14 +16,14 @@ const homeWhyUs = () => {
     },
     {
       title: 'Car Gets Shipped',
-      desc: 'Ship your car across the USA effortlessly with Quick Wheels. We guarantee safe, prompt delivery, ensuring a worry-free experience. Choose Quick Wheels for reliable vehicle transport. Your cars journey, made simple.',
+      desc: 'Ship your car across the USA effortlessly with Quick Wheels. We guarantee safe, prompt delivery, ensuring a worry-free experience.',
       icon: Two,
       color: 'black',
       button: <MyStyledButton />,
     },
     {
       title: 'Car Gets Delivered',
-      desc: 'Experience the ease of Quick Wheels service as your car is delivered across the USA. We ensure safe, timely transport with a focus on customer satisfaction. Trust Quick Wheels for a smooth vehicle delivery process. ',
+      desc: 'Experience the ease of Quick Wheels service as your car is delivered across the USA. We ensure safe, timely transport with a focus on customer satisfaction. ',
       icon: Three,
       color: 'black',
       button: <MyStyledButton />,
