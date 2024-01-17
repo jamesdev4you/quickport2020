@@ -107,9 +107,11 @@ const homeAbout2 = () => {
           Your solution for expertly moving personal vehicles across the USA. We combine speed, safety, and reliability to ensure your car's journey is seamless. Choose Quick Wheels for unmatched vehicle transport service.        </Typography>
         <Button
           variant='contained'
+          href='tel:14159423491'
           sx={{
             backgroundColor: 'black',
             color: 'white',
+            
             marginRight: 'auto',
             '&:hover': { color: 'black' },
           }}
